@@ -1,15 +1,15 @@
 import React, {Component} from 'react';
 import './App.css';
-import NavBar from "./NavBar";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import EmpForm from "./EmpForm"
+import Student from './Student'
+import EmployeeComponent from './EmployeeComponent'
 
 class App extends Component {
     render() {
         return (
             <React.Fragment>
-                <NavBar btnName={this.props.btnName} name={"sagar"}/>
-                <EmpForm/>
+                <Student/>
+                <EmployeeComponent/>
             </React.Fragment>
         );
     }

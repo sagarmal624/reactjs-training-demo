@@ -2,8 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import './index.css';
+import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
-  <App btnName={"ReactJs"} />,
-  document.getElementById('root')
+    <App btnName={"sagar test maldsnkandkadkadakbsasadsdsds"}/>,
+    document.getElementById('root')
 );
+registerServiceWorker();
