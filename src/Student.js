@@ -10,6 +10,7 @@ export default class Student extends Component {
         };
     }
 
+
     onClick = () => {
         this.setState({name: "rahyul", email: "tttt@gmail.com"})
     };
@@ -18,6 +19,7 @@ export default class Student extends Component {
     };
 
     render() {
+
         return (
             <div>
                 <input type={"text"} onChange={this.onChange.bind(this)} name={"name"}/>

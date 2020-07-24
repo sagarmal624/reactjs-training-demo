@@ -19,7 +19,13 @@ F
 src/ButtonComponent.js,7\e\7ef7e3a26aa4f2d01ce67958cf1a1c591610c1ce
 =
 src/NavBar.js,8\3\8333405848d539a119c7df538853f243ad2743b4
-8
-.babelrc,b\c\bcac7464521b8c19a2372c739f6dc9e9ab7dfc80
-A
-webpack.config.js,d\5\d5595158cc48f9bf3e51b06f6e6805a8fd2d6262
+;
+src/App.css,a\a\aa7165aefcf8ee3d73539e99ab007daf1aa18d8d
+=
+src/index.css,c\5\c5d38a62d1faae90a2acaa34b79a7ef365c917e4
+<
+src/logo.svg,6\d\6d3a8cd532ece5b4ddbd4b3b6a678ba686d300bc
+L
+src/registerServiceWorker.js,6\5\651db44f3a5bba8c28dccae90356370ea07c0150
+?
+src/App.test.js,9\2\923703ced91ac38943d37930d9d27a7ebe8f01ad
