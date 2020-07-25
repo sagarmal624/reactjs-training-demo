@@ -29,3 +29,9 @@ L
 src/registerServiceWorker.js,6\5\651db44f3a5bba8c28dccae90356370ea07c0150
 ?
 src/App.test.js,9\2\923703ced91ac38943d37930d9d27a7ebe8f01ad
+>
+src/Student.js,d\d\ddfc4783db9043d101208d54edafc9d9e3db8bf8
+E
+src/RegularStudent.js,5\3\535a51079518da6ebc29fdbd54e9e4e2df3c0e10
+H
+src/EmployeeComponent.js,f\9\f9c09dea5dc0f87b377c9ffaaa2459418e203342
