@@ -10,8 +10,6 @@ A
 :
 
 src/App.js,1\e\1e43fa63aecd2127be034b3fb9d4caa172275714
->
-src/EmpForm.js,8\1\81da7208e7b7adc3f81861fd011fc42b48167161
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
@@ -35,3 +33,5 @@ E
 src/RegularStudent.js,5\3\535a51079518da6ebc29fdbd54e9e4e2df3c0e10
 H
 src/EmployeeComponent.js,f\9\f9c09dea5dc0f87b377c9ffaaa2459418e203342
+@
+src/LoginForm.js,b\3\b33a53bdca64a9c74e4a3e180752a289d18cf1c8
