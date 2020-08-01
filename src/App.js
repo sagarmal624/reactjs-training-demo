@@ -6,14 +6,15 @@ import UserTable from './UserTable'
 import NotFound from './NotFound'
 import UserData from './UserData'
 import NavBar from './NavBar';
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import {Route, Router, Switch} from "react-router-dom";
+import history from './history'
 
 class App extends Component {
     render() {
         return (
             <React.Fragment>
                 <NavBar/>
-                < Router>
+                < Router history={history}>
                     < Switch>
                         < Route
                             exact

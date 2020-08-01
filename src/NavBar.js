@@ -1,21 +1,29 @@
 import React from 'react'
 import {Button} from "reactstrap";
-import {useHistory} from "react-router-dom";
+import history from './history'
+import {useFriendStatus} from "./CustomHooks";
 
 const NavBar = () => {
-    let history = useHistory();
+    const isOnline = useFriendStatus("sagar");
+    //     // useEffect(() => {
+    //     //     //console.log(isOnline);
+    //     // });
+
     const onClick = (e) => {
+        console.log(isOnline);
+
         // e.stopPropagation();
         // e.preventDefault();
-        console.log("History", history);
-        // history.push("/user-table")
+        //history.push("/user-table?test=sagar");
+        //alert("test");
+        console.log(history.location);
+        //history.goBack();
+        // window.location.href="/user-table";
     };
 
     return (<div>
         <a href={"/signup"} className={"btn btn-success"}>Sign Up</a>
-        <Button className={"btn btn-success"} onClick={() => {
-            console.log("His11tory", history);
-        }}>UserTable</Button>
+        <Button className={"btn btn-success"} onClick={onClick}>UserTable</Button>
     </div>);
 };
 
