@@ -24,15 +24,15 @@ export default class RegistrationForm extends Component {
     };
 
     onSubmit = () => {
-        const {email, password, firstName, lastName, formError} = this.state;
+        const {firstName, lastName, email, password, formError} = this.state;
         console.log(this.state.emailError, this.state.passwordError, this.state.firstNameError, this.state.lastNameError);
         if (!formError) {
 
             axios.post("http://localhost:8080/api/v1/user/save", {
-                email: email,
-                password: password,
                 firstName: firstName,
-                lastName: lastName
+                lastName: lastName,
+                email: email,
+                password: password
             }).then(function (response) {
                 console.log(response);
             })

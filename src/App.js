@@ -2,14 +2,14 @@ import React, {Component} from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import RegistrationForm from './RegistrationForm'
-import UserTable from './UserTable'
+import UserTableStateless from './UserTableStateless'
 
 class App extends Component {
     render() {
         return (
             <React.Fragment>
                 <RegistrationForm/>
-                <UserTable/>
+                <UserTableStateless/>
             </React.Fragment>
         );
     }
