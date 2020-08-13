@@ -1,8 +1,12 @@
 import React, {Component} from 'react'
 import {Button, Form, FormGroup, Input, Label} from 'reactstrap';
 import axios from 'axios';
+import {createStructuredSelector} from "reselect";
+import {getStudentList} from '../StudentTable/redux/selectors.js'
+import {connect} from 'react-redux'
+import * as actions from '../StudentTable/redux/actions';
 
-export default class RegistrationForm extends Component {
+class RegistrationForm extends Component {
 
     constructor(props) {
         super(props);
@@ -23,7 +27,8 @@ export default class RegistrationForm extends Component {
         this.setState({[name]: value}, () => this.validateForm(name, value))
     };
 
-    onSubmit = () => {
+    onSubmit = (props) => {
+        const {getStudentList} = this.props;
         const {firstName, lastName, email, password, formError} = this.state;
         console.log(this.state.emailError, this.state.passwordError, this.state.firstNameError, this.state.lastNameError);
         if (!formError) {
@@ -35,6 +40,7 @@ export default class RegistrationForm extends Component {
                 password: password
             }).then(function (response) {
                 console.log(response);
+                getStudentList();
             })
         }
         // alert(formError);
@@ -86,7 +92,7 @@ export default class RegistrationForm extends Component {
             lastNameError: lastNameError
         }, () => this.isValidForm())
 
-    }
+    };
 
     render() {
         return (
@@ -137,3 +143,14 @@ export default class RegistrationForm extends Component {
         )
     }
 }
+
+export const mapStateToProps = createStructuredSelector({
+    studentList: getStudentList,
+});
+
+const mapDispatchToProps = dispatch => {
+    return {
+        getStudentList: params => dispatch(actions.getStudentList(params)),
+    };
+};
+export default connect(mapStateToProps, mapDispatchToProps)(RegistrationForm);

@@ -1,6 +1,6 @@
-import React, {useState} from "react";
+import React from "react";
 
-const StudentComponent = (props) =>{
+const StudentComponent = (props) => {
     return <tr>
         <td>{props.user.id}</td>
         <td>{props.user.firstName}</td>
@@ -9,5 +9,5 @@ const StudentComponent = (props) =>{
         <td>{props.user.password}</td>
         <td> edit</td>
     </tr>
-}
+};
 export default StudentComponent;
